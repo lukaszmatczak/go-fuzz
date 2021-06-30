@@ -12,10 +12,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/dvyukov/go-fuzz/go-fuzz/versifier"
+	"github.com/lukaszmatczak/go-fuzz/go-fuzz/versifier"
 
-	. "github.com/dvyukov/go-fuzz/go-fuzz-defs"
-	. "github.com/dvyukov/go-fuzz/internal/go-fuzz-types"
+	. "github.com/lukaszmatczak/go-fuzz/go-fuzz-defs"
+	. "github.com/lukaszmatczak/go-fuzz/internal/go-fuzz-types"
 )
 
 const (
