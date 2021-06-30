@@ -130,8 +130,12 @@ func (bin *TestBinary) test(data []byte) (res int, ns uint64, cover, sonar, outp
 			bin.testee = nil
 			return
 		}
-		bin.testee.shutdown()
-		bin.testee = nil
+
+		if os.Getenv("FORCE_RESTART") == "1" {
+			bin.testee.shutdown()
+			bin.testee = nil
+		}
+
 		return
 	}
 }
